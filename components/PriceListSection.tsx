@@ -4,7 +4,7 @@ const priceData = [
   {
     title: "Court",
     price: "Rp 87.000/jam",
-    link: "https://padel.pilihotel.com/booking",
+    link: "/booking/court",
     features: [
       { text: "Senin - Minggu", bullet: true },
       { text: "06:00 AM - 10:00 AM | 225k", bullet: false },
@@ -16,7 +16,7 @@ const priceData = [
   },
   {
     title: "Coaching Class",
-    link: "https://padel.pilihotel.com/booking/coaching",
+    link: "/jadwal-booking/coaching",
     price: "Rp 600.000/jam",
     features: [
       { text: "1-2 Orang 600k", bullet: true },
@@ -26,7 +26,7 @@ const priceData = [
   },
   {
     title: "Mabar All Level",
-    link: "https://padel.pilihotel.com/booking-mabar",
+    link: "/jadwal-booking/mabar",
     price: "Rp 75.000 / Player / Session",
     features: [
       { text: "free cold drinks", bullet: true },
@@ -37,6 +37,7 @@ const priceData = [
   {
     title: "Sewa Racket",
     price: "Rp 85.000 / Sesi",
+    link: "wa.me/6281320971811?text=Saya%20ingin%20menyewa%20racket%20padel",
     features: [
       { text: "Padle Racket", bullet: true },
       { text: "Sepatu Padel", bullet: true },

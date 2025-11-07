@@ -26,7 +26,7 @@ export default function HeroSection() {
             memperkenalkan gaya hidup sehat yang menyenangkan.
           </p> */}
         <a
-          href="https://padel.pilihotel.com/booking"
+          href="/jadwal-booking/court"
           className="px-6 py-3 bg-blue-600 text-white rounded-full shadow-lg hover:shadow-xl hover:bg-blue-700 transition-all"
         >
           Reservasi Sekarang

@@ -24,3 +24,214 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Sidebar Menu Styles */
+.menu-item {
+  @apply flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-200 w-full;
+}
+
+.menu-item-active {
+  @apply bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400;
+}
+
+.menu-item-inactive {
+  @apply text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800;
+}
+
+.menu-item-icon-size {
+  @apply w-6 h-6;
+}
+
+.menu-item-icon-active {
+  @apply text-blue-600 dark:text-blue-400;
+}
+
+.menu-item-icon-inactive {
+  @apply text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-400;
+}
+
+.menu-item-text {
+  @apply font-medium text-sm;
+}
+
+.menu-dropdown-item {
+  @apply flex items-center justify-between px-4 py-2 rounded-lg text-sm transition-all duration-200 w-full;
+}
+
+.menu-dropdown-item-active {
+  @apply bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400;
+}
+
+.menu-dropdown-item-inactive {
+  @apply text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800;
+}
+
+.menu-dropdown-badge {
+  @apply px-2 py-0.5 rounded text-xs font-medium;
+}
+
+.menu-dropdown-badge-active {
+  @apply bg-blue-100 dark:bg-blue-800 text-blue-600 dark:text-blue-300;
+}
+
+.menu-dropdown-badge-inactive {
+  @apply bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Table sticky header support */
+thead th {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* Custom Scrollbar */
+.scrollbar-thin::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+.scrollbar-thumb-gray-400::-webkit-scrollbar-thumb {
+  background-color: rgb(156 163 175);
+  border-radius: 4px;
+}
+
+.scrollbar-thumb-gray-600::-webkit-scrollbar-thumb {
+  background-color: rgb(75 85 99);
+  border-radius: 4px;
+}
+
+.scrollbar-track-gray-100::-webkit-scrollbar-track {
+  background-color: rgb(243 244 246);
+}
+
+.scrollbar-track-gray-800::-webkit-scrollbar-track {
+  background-color: rgb(31 41 55);
+}
+
+/* Firefox scrollbar */
+.overflow-x-auto {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(156 163 175) rgb(243 244 246);
+}
+
+.dark .overflow-x-auto {
+  scrollbar-color: rgb(75 85 99) rgb(31 41 55);
+}
+
+.overflow-x-auto::-webkit-scrollbar {
+  height: 10px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-track {
+  background-color: rgb(243 244 246);
+  border-radius: 5px;
+}
+
+.dark .overflow-x-auto::-webkit-scrollbar-track {
+  background-color: rgb(31 41 55);
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb {
+  background-color: rgb(156 163 175);
+  border-radius: 5px;
+  border: 2px solid rgb(243 244 246);
+}
+
+.dark .overflow-x-auto::-webkit-scrollbar-thumb {
+  background-color: rgb(75 85 99);
+  border: 2px solid rgb(31 41 55);
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(107 114 128);
+}
+
+.dark .overflow-x-auto::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(55 65 81);
+}
+
+/* DatePicker z-index fix */
+.react-datepicker-popper {
+  z-index: 9999 !important;
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+.react-datepicker {
+  z-index: 9999 !important;
+}
+
+/* Sticky Jam Column - Header */
+.sticky-jam-header {
+  position: sticky !important;
+  left: 0 !important;
+  z-index: 50 !important;
+  background-color: #f97316 !important; /* orange-500 */
+  color: white !important;
+  padding: 0.5rem 1rem !important;
+  text-align: center !important;
+  min-width: 90px !important;
+  border-right: 1px solid #fb923c !important; /* orange-400 */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1) !important;
+}
+
+@media (min-width: 640px) {
+  .sticky-jam-header {
+    padding: 0.75rem 1rem !important;
+    min-width: 120px !important;
+  }
+}
+
+/* Sticky Jam Column - Body */
+.sticky-jam-cell {
+  position: sticky !important;
+  left: 0 !important;
+  z-index: 40 !important;
+  background-color: #fed7aa !important; /* orange-100 */
+  border-right: 1px solid #fecaca !important; /* orange-200 */
+  border-bottom: 1px solid #e5e7eb !important; /* gray-200 */
+  text-align: center !important;
+  font-weight: 600 !important;
+  padding: 0.5rem 0.75rem !important;
+  font-size: 0.75rem !important;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05) !important;
+}
+
+@media (min-width: 640px) {
+  .sticky-jam-cell {
+    padding: 0.625rem 0.75rem !important;
+    font-size: 0.875rem !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .sticky-jam-cell {
+    font-size: 0.875rem !important;
+  }
+}
+
+/* Dark mode support */
+.dark .sticky-jam-cell {
+  background-color: #7c2d12 !important; /* orange-900 */
+  border-right-color: #9a3412 !important;
+  border-bottom-color: #374151 !important; /* gray-700 */
+}
+
+/* Ensure sticky header stays on top */
+thead {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 45 !important;
+}

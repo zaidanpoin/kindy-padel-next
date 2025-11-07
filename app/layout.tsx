@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import "react-datepicker/dist/react-datepicker.css";
 
 const images = "/images/landing-page/lapangan/padel-ball-logo.png";
 const geistSans = Geist({
@@ -21,6 +22,7 @@ export const metadata: Metadata = {
     icon: images,
   },
 };
+
 export default function RootLayout({
   children,
 }: Readonly<{

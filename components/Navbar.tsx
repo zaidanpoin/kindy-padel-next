@@ -21,12 +21,18 @@ export default function Navbar() {
           <a href="#gallery" className="hover:text-blue-600 transition">
             Gallery
           </a>
+          <a
+            href="/jadwal-booking/court"
+            className="hover:text-blue-600 transition"
+          >
+            Jadwal
+          </a>
           <a href="#contact" className="hover:text-blue-600 transition">
             Kontak
           </a>
         </nav>
         <a
-          href="https://padel.pilihotel.com/booking"
+          href="/booking/court"
           className="px-3 py-1.5 text-xs sm:px-4 sm:py-2 sm:text-sm md:text-base bg-blue-600 text-white rounded-full hover:bg-blue-700 transition font-medium whitespace-nowrap"
         >
           Reservasi Sekarang
