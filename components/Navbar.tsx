@@ -21,10 +21,7 @@ export default function Navbar() {
           <a href="#gallery" className="hover:text-blue-600 transition">
             Gallery
           </a>
-          <a
-            href="/jadwal-booking/court"
-            className="hover:text-blue-600 transition"
-          >
+          <a href="/booking/court" className="hover:text-blue-600 transition">
             Jadwal
           </a>
           <a href="#contact" className="hover:text-blue-600 transition">

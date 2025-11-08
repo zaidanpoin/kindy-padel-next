@@ -16,7 +16,7 @@ const priceData = [
   },
   {
     title: "Coaching Class",
-    link: "/jadwal-booking/coaching",
+    link: "/booking/coaching",
     price: "Rp 600.000/jam",
     features: [
       { text: "1-2 Orang 600k", bullet: true },
@@ -26,7 +26,7 @@ const priceData = [
   },
   {
     title: "Mabar All Level",
-    link: "/jadwal-booking/mabar",
+    link: "/booking/mabar",
     price: "Rp 75.000 / Player / Session",
     features: [
       { text: "free cold drinks", bullet: true },
